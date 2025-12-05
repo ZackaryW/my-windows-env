@@ -8,6 +8,9 @@ if (!(Get-Command scoop -ErrorAction SilentlyContinue)) {
     Write-Host "Scoop already installed"
 }
 
+scoop install git
+scoop bucket add extras
+
 # Install Python via Scoop
 Write-Host "Installing Python..."
 scoop install python
